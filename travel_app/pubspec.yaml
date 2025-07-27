@@ -1,0 +1,39 @@
+name: mon_voyage
+description: "MonVoyage: Votre compagnon de voyage idéal."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  geolocator: ^12.0.0
+  google_maps_flutter: ^2.12.3
+  google_maps_webservice: ^0.0.20-nullsafety.5
+  flutter_secure_storage: ^9.2.4
+  web_socket_channel: ^2.4.0
+  intl: ^0.20.2
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/MonVoyage.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/database.json
+    - assets/icon/MonVoyage.png

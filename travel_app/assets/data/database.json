@@ -1,0 +1,40 @@
+{
+  "agencies": [
+    {
+      "name": "Bus Express",
+      "trips": [
+        {
+          "from": "Yaoundé",
+          "to": "Douala",
+          "departure": "08:00",
+          "duration": "4h 30m",
+          "price": 5000
+        }
+      ]
+    },
+    {
+      "name": "Voyages Confort",
+      "trips": [
+        {
+          "from": "Yaoundé",
+          "to": "Douala",
+          "departure": "09:15",
+          "duration": "4h 15m",
+          "price": 5500
+        }
+      ]
+    },
+    {
+      "name": "Le Rapide",
+      "trips": [
+        {
+          "from": "Yaoundé",
+          "to": "Douala",
+          "departure": "10:00",
+          "duration": "4h 45m",
+          "price": 4800
+        }
+      ]
+    }
+  ]
+}
