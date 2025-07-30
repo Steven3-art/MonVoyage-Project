@@ -10,3 +10,4 @@ python-jose[cryptography]
 uvicorn
 gunicorn
 streamlit
+python-multipart
