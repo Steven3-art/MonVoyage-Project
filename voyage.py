@@ -129,10 +129,32 @@ except Exception as e:
 
 from fastapi.middleware.cors import CORSMiddleware
 
+from contextlib import asynccontextmanager
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Code à exécuter au démarrage
+    create_db_and_tables()
+    global agences_data
+    try:
+        with open("agences.json", "r", encoding="utf-8") as f:
+            agences_data = json.load(f)
+        print("Données des agences chargées avec succès.")
+    except FileNotFoundError:
+        print("Erreur: Le fichier agences.json est introuvable.")
+    except json.JSONDecodeError:
+        print("Erreur: Impossible de décoder le fichier agences.json.")
+    
+    yield
+    
+    # Code à exécuter à l'arrêt (si nécessaire)
+    print("Application arrêtée.")
+
 app = FastAPI(
     title="API de Voyage avec Paiement et Gestion de Billets",
     description="Une API pour trouver des trajets, localiser des agences, gérer les paiements via Notch Pay et les billets.",
-    version="1.6.0" # Ajout de l'envoi de SMS Twilio
+    version="1.6.0", # Ajout de l'envoi de SMS Twilio
+    lifespan=lifespan
 )
 
 # --- CORS CONFIGURATION ---
@@ -307,18 +329,7 @@ def obtenir_infos_google_maps(depart: str, destination: str) -> Optional[Dict[st
 
 # --- ÉVÉNEMENTS DE L'APPLICATION ---
 
-@app.on_event("startup")
-def on_startup():
-    create_db_and_tables()
-    global agences_data
-    try:
-        with open("agences.json", "r", encoding="utf-8") as f:
-            agences_data = json.load(f)
-        print("Données des agences chargées avec succès.")
-    except FileNotFoundError:
-        print("Erreur: Le fichier agences.json est introuvable.")
-    except json.JSONDecodeError:
-        print("Erreur: Impossible de décoder le fichier agences.json.")
+
 
 # --- ROUTES DE L'API ---
 
