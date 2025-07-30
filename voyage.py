@@ -58,8 +58,11 @@ class UserCreate(BaseModel):
     password: str
     email: Optional[str] = None
 
-class UserInDB(User):
+class UserInDB(BaseModel):
+    username: str
     hashed_password: str
+    email: Optional[str] = None
+    is_active: bool = True
 
 class Token(BaseModel):
     access_token: str
@@ -355,7 +358,7 @@ def trouver_agences_proches(
     return sorted(agences_avec_distance, key=lambda x: x['distance_km'])
 
 @app.get("/trajets/", summary="Rechercher des trajets")
-def rechercher_trajets(depart: str, destination: str, date: Optional[str] = Query(None, description="Date du voyage au format YYYY-MM-DD", example="2025-07-13")):
+def rechercher_trajets(depart: str, destination: str, date: Optional[str] = Query(None, description="Date du voyage au format YYYY-MM-DD", examples=["2025-07-13"])):
     if not agences_data:
         raise HTTPException(status_code=503, detail="Les données des agences ne sont pas disponibles.")
     
