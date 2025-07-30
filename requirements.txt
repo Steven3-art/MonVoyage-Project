@@ -1,3 +1,12 @@
-streamlit
 fastapi
+pydantic
 googlemaps
+python-dotenv
+requests
+sqlmodel
+twilio
+passlib
+python-jose[cryptography]
+uvicorn
+gunicorn
+streamlit
