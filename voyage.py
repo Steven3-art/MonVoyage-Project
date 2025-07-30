@@ -127,10 +127,28 @@ except Exception as e:
     print(f"Avertissement: Impossible d'initialiser le client Twilio. Vérifiez les variables d'environnement: {e}")
     twilio_client = None
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(
     title="API de Voyage avec Paiement et Gestion de Billets",
     description="Une API pour trouver des trajets, localiser des agences, gérer les paiements via Notch Pay et les billets.",
     version="1.6.0" # Ajout de l'envoi de SMS Twilio
+)
+
+# --- CORS CONFIGURATION ---
+origins = [
+    "http://localhost",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "https://jolly-cuchufli-31847a.netlify.app" # REMPLACEZ CECI PAR L'URL DE VOTRE SITE NETLIFY
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 agences_data: List[Dict[str, Any]] = [] # Déclaration de la variable globale

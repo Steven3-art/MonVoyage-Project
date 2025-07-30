@@ -10,7 +10,7 @@ The idea to create this application was born from observing the significant diso
 
 *   **Easy Search and Booking:** Find and book routes between different cities, filtering by date.
 *   **Dynamic Mapping:** The Maps SDK is the backbone of "MyTrip", enabling fluid and interactive display of routes. Clear polylines and custom markers for departure and arrival points offer instant visualization of the journey.
-*   **Real-time Tracking:** Track the position of buses and vehicles in real-time on the map for greater peace of mind for travelers and and their loved ones. The feature is designed to be highly scalable using a dynamic vehicle ID.
+*   **Real-time Tracking:** Track the position of buses and vehicles in real-time on the map for greater peace of mind for travelers and their loved ones. The feature is designed to be highly scalable using a dynamic vehicle ID.
 *   **Precise Distance Calculation:** The integration of distance calculation in kilometers between departure and arrival cities significantly enriches the information provided to the user.
 *   **Secure Mobile Payment:** A payment process is directly integrated into the application for a complete and frictionless booking experience.
 

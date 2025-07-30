@@ -1,0 +1,359 @@
+[
+  {
+    "nom_agence": "Le Voyageur Express",
+    "ville_depart": "Yaoundé",
+    "adresse": "Avenue Kennedy, Yaoundé, Cameroun",
+    "latitude": 3.866667,
+    "longitude": 11.516667,
+    "trajets": [
+      {
+        "destination": "Douala",
+        "latitude": 4.0511,
+        "longitude": 9.7679,
+        "prix_vip": 10000,
+        "prix_classique": 8000,
+        "departure": "08:00",
+        "duration": "4h 30m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      },
+      {
+        "destination": "Bafoussam",
+        "latitude": 5.466667,
+        "longitude": 10.416667,
+        "prix_vip": 8000,
+        "prix_classique": 6000,
+        "departure": "10:30",
+        "duration": "5h 00m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "La Flèche du Noun",
+    "ville_depart": "Bafoussam",
+    "adresse": "Rue de la Joie, Bafoussam, Cameroun",
+    "latitude": 5.466667,
+    "longitude": 10.416667,
+    "trajets": [
+      {
+        "destination": "Yaoundé",
+        "latitude": 3.866667,
+        "longitude": 11.516667,
+        "prix_vip": 8500,
+        "prix_classique": 6500,
+        "departure": "07:00",
+        "duration": "5h 15m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      },
+      {
+        "destination": "Foumban",
+        "latitude": 5.727,
+        "longitude": 10.900,
+        "prix_vip": 2000,
+        "prix_classique": 1500,
+        "departure": "09:00",
+        "duration": "1h 30m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "Princesse Voyages",
+    "ville_depart": "Douala",
+    "adresse": "Boulevard de la Liberté, Akwa, Douala, Cameroun",
+    "latitude": 4.05,
+    "longitude": 9.7,
+    "trajets": [
+      {
+        "destination": "Yaoundé",
+        "latitude": 3.866667,
+        "longitude": 11.516667,
+        "prix_vip": 10000,
+        "prix_classique": 8000,
+        "departure": "09:45",
+        "duration": "4h 20m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "Bucavoyages",
+    "ville_depart": "Yaoundé",
+    "adresse": "Mvan, Yaoundé, Cameroun",
+    "latitude": 3.8333,
+    "longitude": 11.5,
+    "trajets": [
+      {
+        "destination": "Douala",
+        "latitude": 4.0511,
+        "longitude": 9.7679,
+        "prix_vip": 11000,
+        "prix_classique": 9000,
+        "departure": "06:00",
+        "duration": "4h 00m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      },
+      {
+        "destination": "Bafoussam",
+        "latitude": 5.466667,
+        "longitude": 10.416667,
+        "prix_vip": 9000,
+        "prix_classique": 7000,
+        "departure": "12:00",
+        "duration": "5h 30m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"]
+      },
+      {
+        "destination": "Sangmelima",
+        "latitude": 2.9333,
+        "longitude": 11.9833,
+        "prix_vip": 7000,
+        "prix_classique": 5000,
+        "departure": "09:00",
+        "duration": "3h 00m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "Finexs Voyage",
+    "ville_depart": "Douala",
+    "adresse": "Akwa, Douala, Cameroun",
+    "latitude": 4.048,
+    "longitude": 9.704,
+    "trajets": [
+      {
+        "destination": "Yaoundé",
+        "latitude": 3.866667,
+        "longitude": 11.516667,
+        "prix_vip": 10500,
+        "prix_classique": 8500,
+        "departure": "14:00",
+        "duration": "4h 10m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      },
+      {
+        "destination": "Bafoussam",
+        "latitude": 5.466667,
+        "longitude": 10.416667,
+        "prix_vip": 9500,
+        "prix_classique": 7500,
+        "departure": "08:00",
+        "duration": "6h 00m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "Touristique Voyages",
+    "ville_depart": "Yaoundé",
+    "adresse": "Mokolo, Yaoundé, Cameroun",
+    "latitude": 3.873,
+    "longitude": 11.521,
+    "trajets": [
+      {
+        "destination": "Douala",
+        "latitude": 4.0511,
+        "longitude": 9.7679,
+        "prix_vip": 12000,
+        "prix_classique": 10000,
+        "departure": "22:00",
+        "duration": "4h 00m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      },
+      {
+        "destination": "Garoua",
+        "latitude": 9.3014,
+        "longitude": 13.3977,
+        "prix_vip": 25000,
+        "prix_classique": 20000,
+        "departure": "19:00",
+        "duration": "12h 00m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "General Voyage",
+    "ville_depart": "Douala",
+    "adresse": "Bonabéri, Douala, Cameroun",
+    "latitude": 4.06,
+    "longitude": 9.69,
+    "trajets": [
+      {
+        "destination": "Yaoundé",
+        "latitude": 3.866667,
+        "longitude": 11.516667,
+        "prix_vip": 9500,
+        "prix_classique": 7500,
+        "departure": "21:00",
+        "duration": "4h 30m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      },
+      {
+        "destination": "Bamenda",
+        "latitude": 5.963051,
+        "longitude": 10.159121,
+        "prix_vip": 15000,
+        "prix_classique": 12000,
+        "departure": "08:30",
+        "duration": "7h 30m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      },
+      {
+        "destination": "Buea",
+        "latitude": 4.15,
+        "longitude": 9.24,
+        "prix_vip": 11000,
+        "prix_classique": 9000,
+        "departure": "07:00",
+        "duration": "5h 00m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "United Express",
+    "ville_depart": "Bafoussam",
+    "adresse": "Marché A, Bafoussam",
+    "latitude": 5.47,
+    "longitude": 10.42,
+    "trajets": [
+      {
+        "destination": "Douala",
+        "latitude": 4.0511,
+        "longitude": 9.7679,
+        "prix_vip": 9000,
+        "prix_classique": 7000,
+        "departure": "05:00",
+        "duration": "5h 45m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "Men Travel",
+    "ville_depart": "Yaoundé",
+    "adresse": "Quartier Fouda, Yaoundé",
+    "latitude": 3.85,
+    "longitude": 11.53,
+    "trajets": [
+      {
+        "destination": "Douala",
+        "latitude": 4.0511,
+        "longitude": 9.7679,
+        "prix_vip": 10000,
+        "prix_classique": 8000,
+        "departure": "18:00",
+        "duration": "4h 15m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"]
+      },
+      {
+        "destination": "Bamenda",
+        "latitude": 5.963051,
+        "longitude": 10.159121,
+        "prix_vip": 7500,
+        "prix_classique": 5500,
+        "departure": "09:30",
+        "duration": "7h 00m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      },
+      {
+        "destination": "Buea",
+        "latitude": 4.15,
+        "longitude": 9.24,
+        "prix_vip": 7000,
+        "prix_classique": 5000,
+        "departure": "10:00",
+        "duration": "5h 30m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "GALAXY Voyage",
+    "ville_depart": "Yaoundé",
+    "adresse": "Mvan, Yaoundé, Cameroun",
+    "latitude": 3.8333,
+    "longitude": 11.5,
+    "trajets": [
+      {
+        "destination": "Sangmelima",
+        "latitude": 2.9333,
+        "longitude": 11.9833,
+        "prix_vip": 7500,
+        "prix_classique": 5500,
+        "departure": "10:00",
+        "duration": "3h 15m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "KRIBIENNE VOYAGE",
+    "ville_depart": "Yaoundé",
+    "adresse": "Mokolo, Yaoundé, Cameroun",
+    "latitude": 3.873,
+    "longitude": 11.521,
+    "trajets": [
+      {
+        "destination": "Kribi",
+        "latitude": 2.9373,
+        "longitude": 9.9077,
+        "prix_vip": 9500,
+        "prix_classique": 7500,
+        "departure": "07:00",
+        "duration": "4h 00m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "BINAM VOYAGE",
+    "ville_depart": "Yaoundé",
+    "adresse": "Nsam, Yaoundé, Cameroun",
+    "latitude": 3.88,
+    "longitude": 11.5,
+    "trajets": [
+      {
+        "destination": "Bamenda",
+        "latitude": 5.963051,
+        "longitude": 10.159121,
+        "prix_vip": 16000,
+        "prix_classique": 13000,
+        "departure": "09:00",
+        "duration": "7h 45m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      },
+      {
+        "destination": "Buea",
+        "latitude": 4.15,
+        "longitude": 9.24,
+        "prix_vip": 12000,
+        "prix_classique": 10000,
+        "departure": "08:00",
+        "duration": "5h 15m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  },
+  {
+    "nom_agence": "General Voyage",
+    "ville_depart": "Yaoundé",
+    "adresse": "Mvan, Yaoundé, Cameroun",
+    "latitude": 3.8333,
+    "longitude": 11.5,
+    "trajets": [
+      {
+        "destination": "Bafoussam",
+        "latitude": 5.466667,
+        "longitude": 10.416667,
+        "prix_vip": 7000,
+        "prix_classique": 4500,
+        "departure": "11:00",
+        "duration": "5h 00m",
+        "days_of_week": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+      }
+    ]
+  }
+]
