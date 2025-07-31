@@ -44,6 +44,9 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
+# Add a flag to prevent multiple table creations within the same process
+_tables_created = False
+
 # --- MODELS ---
 
 class User(SQLModel, table=True, extend_existing=True):
@@ -229,7 +232,10 @@ def calculer_distance(lat1, lon1, lat2, lon2) -> float:
     return R * c
 
 def create_db_and_tables():
-    SQLModel.metadata.create_all(engine)
+    global _tables_created
+    if not _tables_created:
+        SQLModel.metadata.create_all(engine)
+        _tables_created = True
 
 def get_session():
     with Session(engine) as session:
