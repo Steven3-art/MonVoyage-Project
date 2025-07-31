@@ -11,3 +11,4 @@ uvicorn
 gunicorn
 streamlit
 python-multipart
+psycopg2-binary

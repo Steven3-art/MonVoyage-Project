@@ -117,8 +117,7 @@ NOTCH_PAY_API_URL = "https://api.notchpay.co/payments" # Endpoint corrigé
 APP_BASE_URL = os.getenv("APP_BASE_URL", "http://127.0.0.1:8000")
 
 # Configuration de la base de données SQLite
-DATABASE_FILE = "./database.db"
-DATABASE_URL = f"sqlite:///{DATABASE_FILE}"
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./database.db") # Utilise PostgreSQL en prod, SQLite en dev
 engine = create_engine(DATABASE_URL, echo=True)
 
 # Configuration Twilio
