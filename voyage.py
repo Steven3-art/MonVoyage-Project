@@ -44,9 +44,6 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
-# Add a flag to prevent multiple table creations within the same process
-_tables_created = False
-
 # --- MODELS ---
 
 class User(SQLModel, table=True, extend_existing=True):
@@ -139,7 +136,6 @@ from contextlib import asynccontextmanager
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Code à exécuter au démarrage
-    create_db_and_tables()
     global agences_data
     try:
         with open("agences.json", "r", encoding="utf-8") as f:

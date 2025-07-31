@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker voyage:app
+web: python db_setup.py && gunicorn -w 4 -k uvicorn.workers.UvicornWorker voyage:app
